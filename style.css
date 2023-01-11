@@ -120,6 +120,13 @@ body {
 
 }
 
+.title {
+    font-weight: 300;
+    font-size: 34px;
+    line-height: 35px;
+    margin-bottom: 22px;
+    color: #FFFFFF;
+}
 
 
 
@@ -178,4 +185,89 @@ body {
 
     text-transform: uppercase;
     color: #FFFFFF;
+}
+
+/* ABOUTE-US*/
+.about {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    text-align: center;
+    margin: 0 auto;
+    background-image: url(./img/aboute_us/bgimg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-content__bottom-text {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 1.23;
+    width: 913px;
+    text-align: left;
+    margin-bottom: 81px;
+}
+
+.card-list__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.card-list__item:nth-child(2) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.card-list__item img {
+    width: 250px;
+    height: 250px;
+}
+
+.left {
+    text-align: left;
+    max-width: 740px;
+    margin-left: 20px;
+}
+
+.left .soc__list {
+    justify-content: left;
+}
+
+.right .soc__list {
+    justify-content: right;
+}
+
+.right {
+    text-align: right;
+    max-width: 740px;
+    margin-right: 20px;
+}
+
+.card-list__item-title {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 0.64;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.card-list__item-text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.3;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.card-list__item p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 12px;
 }
