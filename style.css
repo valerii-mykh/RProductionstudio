@@ -430,3 +430,58 @@ body {
 .backstage .item__img:focus .item__hover-text {
     transform: translateY(0);
 }
+
+/*  FOOTER  */
+.contacts-wrap {
+    text-align: center;
+}
+
+.container-contacts {
+    display: flex;
+}
+
+
+.contacts {}
+
+.contacts-title {}
+
+.address {}
+
+.address-title {}
+
+.contacts-address {}
+
+.contacts-list {}
+
+.socials__item {}
+
+.socials__item-title {}
+
+.socials__link {}
+
+
+.socials__icon {}
+
+.contacts-item {}
+
+.contacts-item-link {}
+
+.online {}
+
+.online-title {}
+
+.online-text {}
+
+.online-form {}
+
+.input-field {}
+
+.online-input {}
+
+.text-field {}
+
+.online-label {}
+
+.online-btn {}
+
+.btn {}
