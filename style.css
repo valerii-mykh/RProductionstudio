@@ -10,7 +10,9 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+a,
+li {
     margin: 0;
     padding: 0;
 }
@@ -49,17 +51,17 @@ body {
 
 .link {
     text-decoration: none;
+    display: block;
+    height: inherit;
 }
 
 .container {
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
-
-
 }
 
-@media screen and (min-width: 480px) {
+/* @media screen and (min-width: 480px) {
     .container {
         width: 448px;
     }
@@ -69,7 +71,7 @@ body {
     .container {
         width: 720px;
     }
-}
+} */
 
 @media screen and (min-width: 1200px) {
     .container {
@@ -93,6 +95,7 @@ body {
 }
 
 .nav__item {
+    width: 100px;
     margin-right: 40px;
 
 }
@@ -129,7 +132,9 @@ body {
     color: #FFFFFF;
 }
 
-
+.menu-open-btn {
+    display: none;
+}
 
 
 /*       HERO          */
@@ -181,16 +186,35 @@ body {
 
 .socials__item {
     margin-right: 14px;
+    height: 44px;
+
 }
 
+.soc__list .socials__text {
+    margin-right: 14px;
+
+}
 
 .link-text {
     font-weight: 700;
     font-size: 19px;
     line-height: 0.89;
-
     text-transform: uppercase;
     color: #FFFFFF;
+    padding-top: 14px;
+}
+
+
+
+.socials__link:hover {
+    border-radius: 25%;
+    color: black;
+    background-color: white;
+}
+
+.socials__icon {
+
+    fill: currentColor;
 }
 
 /* ABOUTE-US*/
@@ -474,9 +498,6 @@ body {
 }
 
 
-.socials__item {
-    margin-bottom: 12px;
-}
 
 .socials__item-title {
     font-weight: 500;
@@ -499,16 +520,27 @@ body {
     flex-direction: row;
 }
 
-
-.socials__icon {
-    margin-right: 10px;
+.contacts-list .socials__item {
+    width: unset;
+    height: unset;
 }
+
+.contacts-list .socials__item:hover {
+    border-radius: unset;
+    color: unset;
+    background-color: unset;
+}
+
+
 
 
 .contacts-item {
     margin-bottom: 12px;
 }
 
+.contacts-item .socials__icon {
+    margin-right: 10px;
+}
 
 .online {
     text-align: left;
