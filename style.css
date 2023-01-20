@@ -342,47 +342,36 @@ body {
 }
 
 #container label {
-    border-radius: .25em .25em 0 0;
-    color: #888;
     cursor: pointer;
     display: block;
     float: left;
-    font-size: 1em;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
     width: fit-content;
-    height: 2.5em;
-    line-height: 2.5em;
-    margin: 0 auto;
-    padding: 0 1.5em;
+    margin: 7px auto;
     text-align: center;
 }
 
 #container input:hover+label {
-    background: #ddd;
-
-    color: #666;
-
+    font-weight: 600;
+    color: #fff;
 }
 
 #container input:checked+label {
-    background: #f1f1f1;
-
-    color: #444;
-
+    font-weight: 600;
+    color: #fff;
     position: relative;
     z-index: 6;
-
     -webkit-transition: .1s;
     -moz-transition: .1s;
     -o-transition: .1s;
     -ms-transition: .1s;
-
 }
 
 #content,
 #content1 {
-    background: #f1f1f1;
     border-radius: 10px;
-
     position: absolute;
     width: 320px;
     height: 190px;
@@ -396,7 +385,6 @@ body {
 
 #content1 {
     right: 0;
-
 }
 
 #content div,
@@ -406,13 +394,9 @@ body {
     height: auto;
     position: absolute;
     z-index: -100;
-
     transition: all linear 0.1s;
 
 }
-
-
-.content p {}
 
 .content p.column-right {
     margin-left: 3%;
@@ -422,7 +406,6 @@ body {
     border-radius: 10px;
     width: 100%;
     height: 190px;
-
     background-color: red;
     display: block;
     margin: 0 auto 1em auto;
@@ -447,10 +430,6 @@ body {
 input.visible {
     visibility: visible !important;
 }
-
-
-
-
 
 .benefits-list {
     display: flex;
@@ -495,7 +474,7 @@ input.visible {
     padding-bottom: 140px;
     text-align: center;
     background-image: url(./img/portfolio/bgimg.png);
-    background-size: 100% 120%;
+    background-size: 100% 110%;
     background-repeat: no-repeat;
 }
 
@@ -548,7 +527,7 @@ input.visible {
     padding-bottom: 140px;
     text-align: center;
     background-image: url(./img/backstage/bgimg.png);
-    background-size: 100% 120%;
+    background-size: 100% 110%;
     background-repeat: no-repeat;
 }
 
