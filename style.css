@@ -321,6 +321,126 @@ body {
     margin-bottom: 40px;
 }
 
+#container {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+#container input {
+    height: 2.5em;
+    display: none;
+    visibility: hidden;
+}
+
+#container label {
+    border-radius: .25em .25em 0 0;
+    color: #888;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 1em;
+    width: fit-content;
+    height: 2.5em;
+    line-height: 2.5em;
+    margin: 0 auto;
+    padding: 0 1.5em;
+    text-align: center;
+}
+
+#container input:hover+label {
+    background: #ddd;
+
+    color: #666;
+
+}
+
+#container input:checked+label {
+    background: #f1f1f1;
+
+    color: #444;
+
+    position: relative;
+    z-index: 6;
+
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+    -o-transition: .1s;
+    -ms-transition: .1s;
+
+}
+
+#content,
+#content1 {
+    background: #f1f1f1;
+    border-radius: 0 .25em .25em .25em;
+    min-height: 20em;
+    position: absolute;
+    max-width: 100%;
+    z-index: 5;
+}
+
+#content {
+    left: 0;
+}
+
+#content1 {
+    right: 0;
+}
+
+#content div,
+#content1 div {
+    opacity: 0;
+    padding: 1.5em;
+    position: absolute;
+    z-index: -100;
+
+    transition: all linear 0.1s;
+
+}
+
+
+.content p {
+    float: left;
+    width: 48.5%;
+}
+
+.content p.column-right {
+    margin-left: 3%;
+}
+
+.content p img {
+    display: block;
+    margin: 0 auto 1em auto;
+}
+
+
+
+#container input#tab-1:checked~#content #content-1,
+#container input#tab-2:checked~#content #content-2,
+#container input#tab-3:checked~#content #content-3,
+#container input#tab-4:checked~#content #content-4,
+#container input#tab-5:checked~#content #content-5,
+#container input#tab-1:checked~#content1 #content-6,
+#container input#tab-2:checked~#content1 #content-7,
+#container input#tab-3:checked~#content1 #content-8,
+#container input#tab-4:checked~#content1 #content-9,
+#container input#tab-5:checked~#content1 #content-10 {
+    opacity: 1;
+    z-index: 100;
+}
+
+input.visible {
+    visibility: visible !important;
+}
+
+
+
+
+
 .benefits-list {
     display: flex;
     flex-direction: row;
