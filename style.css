@@ -376,25 +376,28 @@ body {
 #content,
 #content1 {
     background: #f1f1f1;
-    border-radius: 0 .25em .25em .25em;
-    min-height: 20em;
+    border-radius: 10px;
+
     position: absolute;
-    max-width: 100%;
+    width: 200px;
+    height: 200px;
     z-index: 5;
 }
 
 #content {
     left: 0;
+
 }
 
 #content1 {
     right: 0;
+
 }
 
 #content div,
 #content1 div {
     opacity: 0;
-    padding: 1.5em;
+
     position: absolute;
     z-index: -100;
 
@@ -403,16 +406,18 @@ body {
 }
 
 
-.content p {
-    float: left;
-    width: 48.5%;
-}
+.content p {}
 
 .content p.column-right {
     margin-left: 3%;
 }
 
-.content p img {
+.content img {
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+
+    background-color: red;
     display: block;
     margin: 0 auto 1em auto;
 }
