@@ -59,6 +59,7 @@ body {
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
+    position: relative;
 }
 
 /* @media screen and (min-width: 480px) {
@@ -80,10 +81,10 @@ body {
 }
 
 /*       HEADER          */
-.header {
+.nav {
     position: absolute;
     top: 50px;
-    left: 50%;
+    left: 40%;
     z-index: 1;
     transform: translateX(-35%);
 
@@ -589,7 +590,7 @@ input.visible {
 .address {
     text-align: left;
     width: 600px;
-    margin-right: 75px;
+    margin-right: 10px;
 }
 
 .address-title {
